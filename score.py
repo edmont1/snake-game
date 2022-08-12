@@ -21,6 +21,7 @@ class Score(Turtle):
             with open('highscore.txt', mode='w') as hs:
                 hs.write('0')
         self.clear()
+        self.goto(100, 260)
         self.write(arg=f'SCORE: {self.value} HIGH SCORE : {self.high_score}', font=('Courier', 20, 'normal'),align='center')
 
     def scorecount(self):

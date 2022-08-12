@@ -31,15 +31,21 @@ while True:
         food.refresh()
         score.scorecount()
         snake.grow()
-    if snake.detect_colision_wall():
+    elif snake.detect_colision_wall():
         score.set_high_score()
         score.gameover()
-        break
-    if snake.detectcolisionsnake():
+        time.sleep(3)
+        score.clear()
+        snake.reset()
+        snake.move()
+        score.scoreboard()
+    elif snake.detect_colision_snake():
         score.set_high_score()
         score.gameover()
-        break
-
-
+        time.sleep(3)
+        score.clear()
+        snake.reset()
+        snake.move()
+        score.scoreboard()
 
 screen.exitonclick()

@@ -63,7 +63,7 @@ class Snake:
             return True
 
 
-    def detectcolisionsnake(self):
+    def detect_colision_snake(self):
         for i in range(1,len(self.snake_body)):
             if self.head.distance(self.snake_body[i]) < 5:
                 return True
