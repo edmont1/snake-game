@@ -14,13 +14,3 @@ class Food(Turtle):
     def refresh(self):
         self.setpos(random.randint(-280,280),random.randint(-280,280))
 
-
-
-
-
-
-
-
-
-
-
